@@ -1,0 +1,16 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+input {
+  color: var(--light-red);
+}
+
+input::placeholder {
+  color: var(--light-grey);
+}

@@ -1,5 +1,7 @@
 import "./App.css";
+import Home from "./components/home/Home";
+import Quiz from "./components/quiz/Quiz";
 
 export default function App() {
-  return <h1>Hello World!</h1>;
+  return <Home />;
 }
