@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Righteous&family=Roboto&display=swap");
+
+:root {
+  --red: #ff3030;
+  --yellow: #ff922e;
+  --green: #2fbe34;
+  --salmon: #fb6b6b;
+  --dark-grey: #333;
+  --light-grey: #adadad;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--salmon);
+  font-family: "Recursive", sans-serif;
+}
