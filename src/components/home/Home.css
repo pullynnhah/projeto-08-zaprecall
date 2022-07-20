@@ -7,10 +7,56 @@
   gap: 18px;
 }
 
+select,
+input {
+  width: 66vw;
+  height: 43px;
+  background-color: var(--white);
+  font: 14px/16px "Roboto", sans-serif;
+  padding-left: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select {
+  appearance: menulist-button;
+  color: var(--grey);
+}
+
+select:focus,
+input:focus {
+  background-color: var(--light-pink);
+}
+
 input {
   color: var(--light-red);
 }
 
 input::placeholder {
-  color: var(--light-grey);
+  color: var(--grey);
+}
+
+button {
+  width: 66vw;
+  height: 54px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--dark-red);
+  background-color: var(--white);
+}
+
+button:not(:disabled) {
+  border: 1px solid var(--dark-red);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+button:not(:disabled):hover {
+  transform: scale(0.95);
+}
+button:disabled {
+  color: var(--grey);
+  background-color: var(--light-grey);
 }

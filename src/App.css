@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Righteous&family=Roboto&display=swap");
 
 :root {
+  --light-pink: #fff0f0;
   --light-red: #fb6b6b;
   --red: #ff3030;
+  --dark-red: #d70900;
   --yellow: #ff922e;
   --green: #2fbe34;
+  --light-grey: #e8e8e8;
+  --medium-grey: #c0c0c0;
+  --grey: #adadad;
   --dark-grey: #333;
-  --light-grey: #adadad;
   --white: #fff;
 }
 
