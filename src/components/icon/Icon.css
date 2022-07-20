@@ -1,0 +1,19 @@
+ion-icon {
+  font-size: 23px;
+}
+
+.play-outline {
+  color: var(--dark-grey);
+}
+
+.close-circle {
+  color: var(--red);
+}
+
+.help-circle {
+  color: var(--yellow);
+}
+
+.checkmark-circle {
+  color: var(--green);
+}
