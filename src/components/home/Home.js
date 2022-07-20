@@ -19,12 +19,12 @@ export default function Home() {
   useEffect(() => {
     enableButton();
     zapRef.current = zapGoal;
-  }, [zapGoal]);
+  }, [zapGoal, enableButton]);
 
   useEffect(() => {
     enableButton();
     deckRef.current = deck;
-  }, [deck]);
+  }, [deck, enableButton]);
 
   return (
     <main className="home">

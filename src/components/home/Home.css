@@ -19,6 +19,8 @@ input {
 }
 
 select {
+  display: flex;
+  align-items: center;
   appearance: menulist-button;
   color: var(--grey);
 }
@@ -47,7 +49,7 @@ button {
   background-color: var(--white);
 }
 
-button:not(:disabled) {
+.home button:not(:disabled) {
   border: 1px solid var(--dark-red);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -56,6 +58,7 @@ button:not(:disabled) {
 button:not(:disabled):hover {
   transform: scale(0.95);
 }
+
 button:disabled {
   color: var(--grey);
   background-color: var(--light-grey);

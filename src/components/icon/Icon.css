@@ -7,13 +7,16 @@ ion-icon {
 }
 
 .close-circle {
+  text-decoration: line-through;
   color: var(--red);
 }
 
 .help-circle {
+  text-decoration: line-through;
   color: var(--yellow);
 }
 
 .checkmark-circle {
+  text-decoration: line-through;
   color: var(--green);
 }
