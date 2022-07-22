@@ -6,17 +6,20 @@ ion-icon {
   color: var(--dark-grey);
 }
 
-.close-circle {
+.close-circle,
+ion-icon[name="close-circle"] {
   text-decoration: line-through;
   color: var(--red);
 }
 
-.help-circle {
+.help-circle,
+ion-icon[name="help-circle"] {
   text-decoration: line-through;
   color: var(--yellow);
 }
 
-.checkmark-circle {
+.checkmark-circle,
+ion-icon[name="checkmark-circle"] {
   text-decoration: line-through;
   color: var(--green);
 }
