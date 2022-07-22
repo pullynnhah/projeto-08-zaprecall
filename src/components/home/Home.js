@@ -14,7 +14,7 @@ export default function Home({setState, decks, setDeckName, setGoal}) {
     setDisable(!(deck && zapGoal));
     zapRef.current = zapGoal;
     deckRef.current = deck;
-  }, [zapGoal, setDisable, deck]);
+  }, [setDisable, zapGoal, deck]);
 
   return (
     <main className="home">
@@ -37,6 +37,7 @@ export default function Home({setState, decks, setDeckName, setGoal}) {
         disabled={disable}
         onClick={() => {
           setState("quiz");
+          setDeckName(deck);
           setGoal(deck.length <= zapGoal ? zapGoal : deck.length);
         }}>
         Iniciar Recall!
