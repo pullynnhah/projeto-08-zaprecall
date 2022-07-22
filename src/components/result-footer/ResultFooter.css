@@ -1,0 +1,9 @@
+.result-footer {
+  height: 70px;
+}
+
+.result p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,22 @@
+.message-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin: 10px 0;
+}
+
+.message-header img {
+  width: 23px;
+  height: 23px;
+}
+
+.message-header h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.message p {
+  text-align: center;
+}

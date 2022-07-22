@@ -3,13 +3,18 @@ import Logo from "../logo/Logo";
 
 import decks from "../../utils/decks";
 import Flashcards from "../flashcards/Flashcards";
+import Result from "../result/Result";
+import {useState} from "react";
+
 export default function Quiz() {
-  const deck = decks.Terminal;
+  const [result, setResult] = useState([]);
+  const deck = decks.Git;
   deck.sort(() => Math.random() - 0.5);
   return (
     <main className="quiz">
       <Logo />
-      <Flashcards deck={deck} />
+      <Flashcards deck={deck} result={result} setResult={setResult} />
+      <Result results={result} size={deck.length} />
     </main>
   );
 }
