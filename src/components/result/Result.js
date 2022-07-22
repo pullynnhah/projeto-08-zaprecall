@@ -13,7 +13,7 @@ export default function Result({results, size, setState, zapGoal}) {
   }
   return (
     <section className="result">
-      <ResultFooter results={results} size={size} />
+      <ResultFooter results={results} size={size} setState={setState} />
     </section>
   );
 }

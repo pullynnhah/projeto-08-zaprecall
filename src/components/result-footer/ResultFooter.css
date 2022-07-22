@@ -1,5 +1,5 @@
 .result-footer {
-  height: 70px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,4 +10,20 @@
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 6px;
+}
+
+.replay {
+  margin-top: 10px;
+  background-color: var(--light-red);
+  color: var(--white);
+  width: 40vw;
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.replay:hover {
+  cursor: pointer;
+  transform: scale(0.95);
 }
