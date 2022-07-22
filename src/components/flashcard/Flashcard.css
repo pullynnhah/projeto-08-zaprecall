@@ -3,7 +3,6 @@
   background-color: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
@@ -16,9 +15,13 @@
   padding: 0 15px;
 }
 
+.flashcard h2 {
+  font-weight: 700;
+}
+
 .flashcard:not(.collapse) {
   height: 131px;
-  font-weight: 400;
+  color: var(--dark-grey);
   font-size: 18px;
   line-height: 22px;
   padding: 18px 15px 6px;
@@ -32,40 +35,4 @@
   position: absolute;
   bottom: 6px;
   right: 15px;
-}
-
-.btns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 6px;
-  left: 15px;
-  right: 15px;
-}
-
-button {
-  width: 20vw;
-  height: 37px;
-  border-radius: 5px;
-  text-align: center;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #fff;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.forgot {
-  background-color: var(--red);
-}
-
-.almost {
-  background-color: var(--yellow);
-}
-
-.zap {
-  background-color: var(--green);
 }

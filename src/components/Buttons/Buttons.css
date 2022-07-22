@@ -1,0 +1,34 @@
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 6px;
+  left: 15px;
+  right: 15px;
+}
+
+button {
+  width: 20vw;
+  height: 37px;
+  border-radius: 5px;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.forgot {
+  background-color: var(--red);
+}
+
+.almost {
+  background-color: var(--yellow);
+}
+
+.zap {
+  background-color: var(--green);
+}

@@ -2,6 +2,7 @@ import "./Flashcard.css";
 import Icon from "../icon/Icon";
 import arrow from "../../assets/images/arrow.svg";
 import {useState} from "react";
+import Buttons from "../Buttons/Buttons";
 
 export default function Flashcard({question, answer, cardNumber, result, setResult}) {
   const [state, setState] = useState(0);
@@ -15,33 +16,29 @@ export default function Flashcard({question, answer, cardNumber, result, setResu
 
   if (state === 0) {
     return (
-      <section className={`flashcard collapse ${name}`} onClick={() => setState(1)}>
+      <section
+        className={`flashcard collapse ${name}`}
+        onClick={() => {
+          if (name === "play-outline") {
+            setState(1);
+          }
+        }}>
         <h2>Pergunta {cardNumber + 1}</h2>
         <Icon name={name} />
       </section>
     );
   } else if (state === 1) {
     return (
-      <section className="flashcard front" onClick={() => setState(2)}>
+      <section className="flashcard" onClick={() => setState(2)}>
         <p>{question}</p>
         <img src={arrow} alt="arrow" />
       </section>
     );
   } else if (state === 2) {
     return (
-      <section className="flashcard front">
+      <section className="flashcard">
         <p>{answer}</p>
-        <div className="btns">
-          <button className="forgot" onClick={() => addResult("close-circle")}>
-            Não lembrei
-          </button>
-          <button className="almost" onClick={() => addResult("help-circle")}>
-            Quase não lembrei
-          </button>
-          <button className="zap" onClick={() => addResult("checkmark-circle")}>
-            Zap!
-          </button>
-        </div>
+        <Buttons addResult={addResult} />
       </section>
     );
   }
