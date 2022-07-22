@@ -7,7 +7,7 @@ export default function Result({results, size, setState, zapGoal}) {
     return (
       <section className="result final-result">
         <Message results={results} zapGoal={zapGoal} />
-        <ResultFooter results={results} size={size} />
+        <ResultFooter results={results} size={size} setState={setState} />
       </section>
     );
   }

@@ -113,7 +113,7 @@ const decks = {
     },
     {
       question: "Quais os passos para adicionar mudanças ao repo no GitHub?",
-      answer: "git add <filename>\ngit commit -m 'mensagem'\ngit push",
+      answer: "git add <filename><br />git commit -m 'mensagem'<br />git push",
     },
     {
       question: "Qual o comando para adicionar um arquivo a área de staging?",
