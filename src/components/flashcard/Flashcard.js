@@ -2,7 +2,7 @@ import "./Flashcard.css";
 import Icon from "../icon/Icon";
 import arrow from "../../assets/images/arrow.svg";
 import {useState} from "react";
-import Buttons from "../Buttons/Buttons";
+import Buttons from "../buttons/Buttons";
 
 export default function Flashcard({question, answer, cardNumber, result, setResult}) {
   const [state, setState] = useState(0);
