@@ -1,15 +1,16 @@
 import "./App.css";
 import Home from "./components/home/Home";
 import Quiz from "./components/quiz/Quiz";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import decks from "./utils/decks";
+import {useState} from "react";
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quiz" element={<Quiz />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  const [state, setState] = useState("home");
+  const [deckName, setDeckName] = useState("");
+  const [goal, setGoal] = useState(0);
+  if (state === "home") {
+    return <Home setState={setState} decks={decks} setDeckName={setDeckName} setGoal={setGoal} />;
+  }
+
+  return <Quiz setState={setState} decks={decks} deckName={deckName} zapGoal={goal} />;
 }

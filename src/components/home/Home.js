@@ -1,30 +1,20 @@
 import "./Home.css";
 
-import decks from "../../utils/decks";
 import Logo from "../logo/Logo";
 import {useEffect, useRef, useState} from "react";
-import {Link} from "react-router-dom";
 
-export default function Home() {
+export default function Home({setState, decks, setDeckName, setGoal}) {
   const [disable, setDisable] = useState(true);
   const [zapGoal, setZapGoal] = useState("");
   const [deck, setDeck] = useState("");
   const zapRef = useRef("");
   const deckRef = useRef("");
 
-  function enableButton() {
+  useEffect(() => {
     setDisable(!(deck && zapGoal));
-  }
-
-  useEffect(() => {
-    enableButton();
     zapRef.current = zapGoal;
-  }, [zapGoal, enableButton]);
-
-  useEffect(() => {
-    enableButton();
     deckRef.current = deck;
-  }, [deck, enableButton]);
+  }, [zapGoal, setDisable, deck]);
 
   return (
     <main className="home">
@@ -43,10 +33,14 @@ export default function Home() {
         onChange={e => setZapGoal(e.target.value)}
         placeholder="Digite sua meta de zaps..."
       />
-
-      <Link to="/quiz">
-        <button disabled={disable}>Iniciar Recall!</button>
-      </Link>
+      <button
+        disabled={disable}
+        onClick={() => {
+          setState("quiz");
+          setGoal(deck.length <= zapGoal ? zapGoal : deck.length);
+        }}>
+        Iniciar Recall!
+      </button>
     </main>
   );
 }

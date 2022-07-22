@@ -2,11 +2,11 @@ import "./Result.css";
 import Message from "../message/Message";
 import ResultFooter from "../result-footer/ResultFooter";
 
-export default function Result({results, size}) {
+export default function Result({results, size, setState, zapGoal}) {
   if (results.length === size) {
     return (
       <section className="result final-result">
-        <Message results={results} zapGoal={6} />
+        <Message results={results} zapGoal={zapGoal} />
         <ResultFooter results={results} size={size} />
       </section>
     );
