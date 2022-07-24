@@ -29,9 +29,9 @@ export default function Flashcard({question, answer, cardNumber, result, setResu
     );
   } else if (state === 1) {
     return (
-      <section className="flashcard" onClick={() => setState(2)}>
+      <section className="flashcard">
         <p>{question}</p>
-        <img src={arrow} alt="arrow" />
+        <img src={arrow} alt="arrow" onClick={() => setState(2)} />
       </section>
     );
   } else if (state === 2) {
