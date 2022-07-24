@@ -1,5 +1,9 @@
 .home {
   height: 100vh;
+}
+
+.home,
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
