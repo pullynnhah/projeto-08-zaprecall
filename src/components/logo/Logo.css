@@ -13,7 +13,7 @@
 
 .logo h1 {
   color: var(--white);
-  font: 36px/45px "Righteous", "cursive";
+  font: 36px/45px "Righteous", cursive;
 }
 
 .quiz .logo {
