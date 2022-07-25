@@ -1,4 +1,5 @@
 import "./Result.css";
+
 import Message from "../message/Message";
 import ResultFooter from "../result-footer/ResultFooter";
 

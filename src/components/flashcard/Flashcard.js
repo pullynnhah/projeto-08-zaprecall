@@ -1,7 +1,9 @@
-import "./Flashcard.css";
-import Icon from "../icon/Icon";
-import arrow from "../../assets/images/arrow.svg";
 import {useState} from "react";
+
+import "./Flashcard.css";
+import arrow from "../../assets/images/arrow.svg";
+
+import Icon from "../icon/Icon";
 import Buttons from "../buttons/Buttons";
 
 export default function Flashcard({question, answer, cardNumber, result, setResult}) {

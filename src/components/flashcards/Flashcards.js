@@ -1,4 +1,5 @@
 import "./Flashcards.css";
+
 import Flashcard from "../flashcard/Flashcard";
 
 export default function Flashcards({deck, result, setResult}) {

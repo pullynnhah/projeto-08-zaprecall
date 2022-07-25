@@ -1,5 +1,4 @@
 import "./Message.css";
-
 import party from "../../assets/images/party.svg";
 import sad from "../../assets/images/sad.svg";
 

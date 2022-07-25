@@ -1,6 +1,6 @@
+import "./Logo.css";
 import logo from "../../assets/images/logo.svg";
 
-import "./Logo.css";
 export default function Logo() {
   return (
     <section className="logo">

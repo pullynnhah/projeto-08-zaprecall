@@ -1,7 +1,7 @@
-import "./Home.css";
-
-import Logo from "../logo/Logo";
 import {useEffect, useRef, useState} from "react";
+
+import "./Home.css";
+import Logo from "../logo/Logo";
 
 export default function Home({setState, decks, setDeckName, setGoal}) {
   const [disable, setDisable] = useState(true);

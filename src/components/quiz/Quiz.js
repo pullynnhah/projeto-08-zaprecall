@@ -1,9 +1,10 @@
+import {useState} from "react";
+
 import "./Quiz.css";
 import Logo from "../logo/Logo";
 
 import Flashcards from "../flashcards/Flashcards";
 import Result from "../result/Result";
-import {useState} from "react";
 
 export default function Quiz({setState, decks, deckName, zapGoal}) {
   const [result, setResult] = useState([]);
